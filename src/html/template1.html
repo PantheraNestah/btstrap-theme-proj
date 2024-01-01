@@ -22,11 +22,38 @@
                     <span class="text-center">Dashboard</span>
                 </div>
                 <div class="nav-div-drop collapse show navbar-collapse" id="verticalNav">
+                    <div class="dropdown staff-prof-sm">
+                        <span>
+                            <a><i class="bi bi-bell-fill btsp-icons"></i></a>
+                        </span>
+                        <a id="dropmenuAcc" class="div-staff-prof show" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="../imgs/AI-Profile-Picture.jpg" alt="AI generated image" style="width: 30px;height: 30px;border-radius: 50%;">
+                        </a>
+                        <div id="staff-accessories" class="dropdown-menu dropdown-menu-end staff-accessories" aria-labelled-by="dropmenuAcc" data-bs-popper="static">
+                            <span class="header-wrapper d-flex align-items-center justify-content-center">
+                                <h2 class="text-center">Profile & account</h2>
+                            </span>
+                            <ul class="d-flex flex-column justify-content-between mx-auto">
+                                <!-- <li>
+                                    <span><i class="bi bi-bell-fill btsp-icons"></i></span>
+                                    <span>Notifications</span>
+                                </li> -->
+                                <li>
+                                    <span><i class="bi bi-gear-fill btsp-icons"></i></span>
+                                    <span>Settings</span>
+                                </li>
+                                <li>
+                                    <span><i class="bi bi-box-arrow-right btsp-icons"></i></span>
+                                    <span>Logout</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#proj-menu" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="proj-menu">Projects</a>
                             <div class="collapse mini-menu" id="proj-menu">
-                                <a class="d-block">Add project</a>
+                                <a class="d-block" data-bs-toggle="modal" data-bs-target="#registrationModal">Add project</a>
                                 <a class="d-block">Manage</a>
                                 <a class="d-block">View</a>
                             </div>
@@ -48,7 +75,7 @@
                     </ul>
                 </div>
             </div>
-            <section class="col-lg-10">
+            <section class="col-lg-10 section-quick-acc">
                 <div class="div-quick-acc d-flex justify-content-between col-lg-9 mx-auto">
                     <div class="div-co-name">
                         <h1>Meladen Properties ltd</h1>
@@ -187,6 +214,38 @@
                         <tbody></tbody>
                         <tfoot></tfoot>
                     </table>
+                </div>
+            </div>
+        </section>
+        <section id="registrationModal" class="modal fade myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title myModal-title">Client Registration</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-form">
+                            <form action="" class="d-flex flex-column justify-content-between">
+                                <span class="input-field d-flex justify-content-between">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="clientName">
+                                </span>
+                                <span class="input-field d-flex justify-content-between">
+                                    <label for="clientMail">Email</label>
+                                    <input type="text" name="email" id="clientMail">
+                                </span>
+                                <span class="input-field d-flex justify-content-between">
+                                    <label for="clientPhone">Phone</label>
+                                    <input type="text" name="phone" id="clientPhone">
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
                 </div>
             </div>
         </section>

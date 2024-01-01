@@ -282,6 +282,16 @@ main .section-prop-data .table-tab {
   padding-left: 0.6rem;
   background-color: #f8f9fa;
 }
+.nav-div-drop .staff-prof-sm {
+  margin-top: 1.5rem;
+  margin-right: 0.8rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .nav-div-drop .staff-prof-sm {
+    display: none;
+  }
+}
 
 .navbar-toggler-wrapper {
   margin-left: 5rem;
@@ -293,6 +303,12 @@ main .section-prop-data .table-tab {
 
 .cnavbar-toggler .navbar-toggler-icon {
   font-size: 22px;
+}
+
+@media (max-width: 767.98px) {
+  .section-quick-acc {
+    display: none;
+  }
 }
 
 .div-quick-acc {
@@ -307,28 +323,30 @@ main .section-prop-data .table-tab {
 .div-quick-acc .div-co-name h1, .div-quick-acc .div-co-name .h1 {
   font-size: 18px;
 }
-.div-quick-acc .div-staff-prof {
+
+.div-staff-prof {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.div-quick-acc .staff-accessories {
+
+.staff-accessories {
   width: 10rem;
   height: 9rem;
   border-radius: 4px;
   background-color: #f8f9fa;
   box-shadow: 2px 2px 10px 0.4px rgba(0, 0, 0, 0.2);
 }
-.div-quick-acc .staff-accessories .header-wrapper {
+.staff-accessories .header-wrapper {
   height: 2rem;
   border-bottom: 1.4px solid #dee2e6;
 }
-.div-quick-acc .staff-accessories h2, .div-quick-acc .staff-accessories .h2 {
+.staff-accessories h2, .staff-accessories .h2 {
   font-size: 17px;
   margin: 0;
 }
-.div-quick-acc .staff-accessories ul {
+.staff-accessories ul {
   list-style-type: none;
   height: 5.5rem;
   font-size: 15px;
@@ -341,6 +359,30 @@ main .section-prop-data .table-tab {
 .btsp-icons {
   color: #984c0c;
   font-size: 20px;
+}
+
+.myModal .modal-content {
+  background-color: #ffe5d0;
+}
+.myModal .myModal-title {
+  font-size: 20px;
+}
+
+.modal-form {
+  width: 300px;
+  height: 270px;
+}
+.modal-form form {
+  height: 250px;
+}
+.modal-form label {
+  width: 100px;
+}
+.modal-form input {
+  width: 150px;
+}
+.modal-form .input-field {
+  margin: 1rem auto;
 }
 
 /*!
