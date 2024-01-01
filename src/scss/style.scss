@@ -1,0 +1,26 @@
+@import "_vars.scss";
+@import "_components.scss";
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "~bootstrap/scss/functions";
+
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark";
+
+$custom-colors: (
+    "cprimary": $cust-color1,
+    "cust-bg1": $cust-color2
+);
+
+$theme-colors: map-merge($map1: $theme-colors, $map2: $custom-colors);
+// 2. Include any default variable overrides here
+
+@import "~bootstrap/scss/bootstrap";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: $cust-color2;
+}

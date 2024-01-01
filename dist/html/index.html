@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Webpack</title>
+    <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/main.js"></script><link href="../js/../css/style.css" rel="stylesheet"></head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="nav-div border">
+              <div class="toggle-icon-wrapper">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDropDown" aria-expanded="false" aria-controls="navDropDown" style="border: none;outline: none;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>  
+              
+                <div class="nav-div-drop navbar-vertical-content collapse navbar-collapse border" id="navDropDown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item">
+                          <!-- <button class="p-0 m-0 dropdown-indicator" type="button" data-bs-toggle="collapse" data-bs-target="#hiddenServices" aria-expanded="false" aria-controls="hiddenServices" style="border: none;outline: none;background-color: transparent;">
+                              <span class="">Services</span>
+                          </button> -->
+                          <a class="nav-link dropdown-indicator" href="#hiddenServices" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="hiddenServices">Services</a>
+                          <div class="div-drop-service collapse border" id="hiddenServices">
+                              <span class="d-block">Email Service</span>
+                              <span class="d-block">SMS Service</span>
+                              <span class="d-block">Delivery Service</span>
+                          </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container py-4 px-3 mx-auto">
+      <h1>Hello, Bootstrap and Webpack!</h1>
+      <button class="btn btn-cprimary">Primary button</button>
+    </div>
+  </body>
+</html>

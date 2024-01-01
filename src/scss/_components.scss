@@ -1,0 +1,176 @@
+@import "_vars.scss";
+@import "~bootstrap/scss/functions";
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark";
+
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+
+@import "~bootstrap/scss/utilities";
+
+
+main {
+    margin-top: 5rem;
+    margin-left: 22rem;
+    .section-summary {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .section-summary-board {
+        .card {
+            border: none;
+        }
+        .badge {
+            background-color: $cust-green4;
+        }
+        .co-hightlight {
+            div.card {
+                height: 120px;
+                width: 360px;
+                background-color: $cust-gray1;
+                div.content {
+                    height: 100px;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    color: $cust-gray7;
+                    font-size: 14.6px;
+                }
+            }
+        }
+        .hightlight-slider {
+            height: 220px;
+            width: 360px;
+            margin-top: 1rem;
+            background-color: $cust-gray1;
+            position: relative;
+            .hightlight-slider-text {
+                position: absolute;
+                top: 0.5rem;
+                left: 0.8rem;
+                font-size: 14.6px;
+                color: $cust-gray7;
+            }
+        }
+    }
+    .section-prop-data {
+        background-color: $cust-gray1;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        .div-table-title {
+            background-color: $cust-color2;
+            color: $cust-gray7;
+            margin-left: 2.5rem;
+            margin-right: 3.5rem;
+            padding-right: 2rem;
+            padding-left: 1rem;
+            height: 55px;
+            /* .search-tab {
+                background-color: $cust-gray1;
+                height: 30px;
+            } */
+        }
+        .data-table-wrapper {
+            background-color: $cust-color2;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            padding-bottom: 3rem;
+            .div-table-tabs {
+                height: 60px;
+                padding: 4px;
+                margin: 2rem 0;
+                background-color: $cust-gray1;
+                border-radius: 4px;
+            }
+            .ctable-title {
+                color: $cust-gray7;
+                margin-left: 4rem;
+            }
+            #clientsTable_filter input, #projTable_filter input {
+                background-color: $cust-gray1;
+                width: 110px;
+                border-radius: 6px;
+            }
+        }
+        .table-tab {
+            background-color: $cust-gray1;
+            height: 30px;
+            width: 115px;
+        }
+    }
+}
+.top-nav {
+    height: 4rem;
+    background-color: $cust-color2;
+}
+.nav-div-drop {
+    position: fixed;
+    top: 5rem;
+    left: 5rem;
+    bottom: 0;
+    width: 12rem;
+    padding-left: 0.6rem;
+    background-color: $cust-gray1;
+}
+.navbar-toggler-wrapper {
+    margin-left: 5rem;
+    font-size: 12px;
+    :nth-child(2) {
+        font-size: 18px;
+    }
+}
+.cnavbar-toggler {
+    .navbar-toggler-icon {
+        font-size: 22px;
+    }
+}
+.div-quick-acc {
+    height: 3rem;
+    padding-top: 0.4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: $cust-color2;
+    box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0,0,0,0.2);
+    position: relative;
+    .div-co-name h1 {
+        font-size: 18px;
+    }
+    .div-staff-prof {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgba(0,0,0,0.4);
+    }
+    .staff-accessories {
+        width: 10rem;
+        height: 9rem;
+        border-radius: 4px;
+        background-color: $cust-gray1;
+        box-shadow: 2px 2px 10px 0.4px rgba(0,0,0,0.2);
+        
+        .header-wrapper {
+            height: 2rem;
+            border-bottom: 1.4px solid $gray-300;
+        }
+        h2 {
+            font-size: 17px;
+            margin: 0;
+        }
+        ul {
+            list-style-type: none;
+            height: 5.5rem;
+            font-size: 15px;
+        }
+    }
+}
+.mini-menu {
+    padding-left: 0.6rem;
+}
+.btsp-icons {
+    color: $cust-dark1;
+    font-size: 20px;
+}
