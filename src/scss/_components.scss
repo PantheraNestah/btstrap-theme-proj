@@ -12,7 +12,7 @@
 
 
 main {
-    margin-top: 5rem;
+    margin-top: 4rem;
     margin-left: 22rem;
     .section-summary {
         margin-top: 2rem;
@@ -103,6 +103,11 @@ main {
         }
     }
 }
+.collapse-link {
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
 .top-nav {
     height: 4rem;
     background-color: $cust-color2;
@@ -142,7 +147,7 @@ main {
     }
 }
 .div-quick-acc {
-    height: 3rem;
+    height: 4rem;
     padding-top: 0.4rem;
     padding-left: 4rem;
     padding-right: 4rem;
@@ -187,7 +192,7 @@ main {
     color: $cust-dark1;
     font-size: 20px;
 }
-.myModal {
+.clientModal, .prodModal {
     .modal-content {
         background-color: $cust-color2;
     }
@@ -197,17 +202,50 @@ main {
 }
 .modal-form {
     width: 300px;
-    height: 270px;
-    form {
-        height: 250px;
-    }
     label {
         width: 100px;
     }
     input {
-        width: 150px;
+        width: 180px;
+        font-size: 14px;
     }
     .input-field {
         margin: 1rem auto;
+        position: relative;
+    }
+    .confirm-product {
+        position: absolute;
+        left: 100px;
+        bottom: -25px;
+        color: $cust-green4;
+        span {
+            font-size: 12.5px;
+        }
+    }
+    .operation-response {
+        width: 180px;
+        .success {
+            color: $cust-green4;
+        }
+        .failure {
+            color: $cust-color1;
+        }
+        span {
+            font-size: 12.5px;
+            white-space: nowrap;
+            margin-right: 10px;
+        }
+    }
+}
+.clientModal .modal-form {
+    height: 270px;
+    form {
+        height: 250px;
+    }
+}
+.prodModal .modal-form {
+    height: 150px;
+    form {
+        height: 120px;
     }
 }

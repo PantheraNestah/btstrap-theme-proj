@@ -180,7 +180,7 @@
 }
 
 main {
-  margin-top: 5rem;
+  margin-top: 4rem;
   margin-left: 22rem;
 }
 main .section-summary {
@@ -268,6 +268,12 @@ main .section-prop-data .table-tab {
   width: 115px;
 }
 
+.collapse-link {
+  text-decoration: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+
 .top-nav {
   height: 4rem;
   background-color: #ffe5d0;
@@ -312,7 +318,7 @@ main .section-prop-data .table-tab {
 }
 
 .div-quick-acc {
-  height: 3rem;
+  height: 4rem;
   padding-top: 0.4rem;
   padding-left: 4rem;
   padding-right: 4rem;
@@ -361,28 +367,63 @@ main .section-prop-data .table-tab {
   font-size: 20px;
 }
 
-.myModal .modal-content {
+.clientModal .modal-content, .prodModal .modal-content {
   background-color: #ffe5d0;
 }
-.myModal .myModal-title {
+.clientModal .myModal-title, .prodModal .myModal-title {
   font-size: 20px;
 }
 
 .modal-form {
   width: 300px;
-  height: 270px;
-}
-.modal-form form {
-  height: 250px;
 }
 .modal-form label {
   width: 100px;
 }
 .modal-form input {
-  width: 150px;
+  width: 180px;
+  font-size: 14px;
 }
 .modal-form .input-field {
   margin: 1rem auto;
+  position: relative;
+}
+.modal-form .confirm-product {
+  position: absolute;
+  left: 100px;
+  bottom: -25px;
+  color: #479f76;
+}
+.modal-form .confirm-product span {
+  font-size: 12.5px;
+}
+.modal-form .operation-response {
+  width: 180px;
+}
+.modal-form .operation-response .success {
+  color: #479f76;
+}
+.modal-form .operation-response .failure {
+  color: #e35d6a;
+}
+.modal-form .operation-response span {
+  font-size: 12.5px;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.clientModal .modal-form {
+  height: 270px;
+}
+.clientModal .modal-form form {
+  height: 250px;
+}
+
+.prodModal .modal-form {
+  height: 150px;
+}
+.prodModal .modal-form form {
+  height: 120px;
 }
 
 /*!
