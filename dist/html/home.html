@@ -154,13 +154,13 @@
                     <span>Projects Details</span>
                 </div>
                 <div class="div-table-tabs col-11 d-flex align-items-center justify-content-end mx-auto">
-                    <div class="table-tab btn btn-cprimary d-flex align-items-center">
+                    <div class="table-tab btn btn-cprimary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#prodModal">
                         <span><i class="bi bi-plus-circle-fill btsp-icons"></i></span>
                         <span class="ms-1" style="font-size: 14.5px;">Project</span>
                     </div>
                 </div>
                 <div class="col-11 mx-auto">
-                    <table id="projTable" class="hover col-11 table-stripped">
+                    <table id="projTable" class="col-11">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -183,17 +183,17 @@
                 </div>
                 <div class="div-table-tabs col-11 d-flex align-items-center justify-content-between mx-auto">
                     <div class="col-6">
-                        <div class="table-tab btn btn-cprimary d-flex align-items-center" style="width: 125px;">
+                        <div class="table-tab btn btn-cprimary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#clientModal" style="width: 125px;">
                             <span><i class="bi bi-person-fill-add btsp-icons"></i></span>
                             <span class="ms-1" style="font-size: 14.5px;">New client</span>
                         </div>
                     </div>
                     <div class="notifications-tab col-6 d-flex justify-content-between mx-auto">
-                        <div class="table-tab btn btn-cprimary d-flex align-items-center">
+                        <div class="table-tab btn btn-cprimary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#messageModal">
                             <span><i class="bi bi-envelope-arrow-up-fill btsp-icons"></i></span>
                             <span class="ms-1" style="font-size: 14.5px;">Bulk mail</span>
                         </div>
-                        <div class="table-tab btn btn-cprimary d-flex align-items-center">
+                        <div class="table-tab btn btn-cprimary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#messageModal">
                             <span><i class="bi bi-chat-left-dots-fill btsp-icons"></i></span>
                             <span class="ms-1" style="font-size: 14.5px;">Bulk SMS</span>
                         </div>
@@ -299,6 +299,44 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="messageModal" class="modal fade messageModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title myModal-title">Email all clients</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-form">
+                            <form action="" class="d-flex flex-column justify-content-between">
+                                <span class="input-field d-flex justify-content-between">
+                                    <label for="prodId">Product Id</label>
+                                    <input class="text-center" type="text" name="prodId" id="prodId" placeholder="">
+                                </span>
+                                <span class="message-field d-flex flex-column">
+                                    <label for="message">Compose Message</label>
+                                    <textarea name="message" id="message" placeholder="Write message here..."></textarea>
+                                </span>
+                                <span class="operation-response mx-auto">
+                                    <label class="success mx-auto d-flex align-items-center">
+                                        <span>Sent Successfully</span>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                    </label>
+                                    <label class="failure mx-auto d-none align-items-center">
+                                        <span>Failed!</span>
+                                        <i class="bi bi-x-circle-fill"></i>
+                                    </label>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send</button>
                     </div>
                 </div>
             </div>

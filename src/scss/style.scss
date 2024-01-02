@@ -10,7 +10,7 @@
 
 $custom-colors: (
     "cprimary": $cust-color1,
-    "cust-bg1": $cust-color2
+    "csecondary": $cust-color2
 );
 
 $theme-colors: map-merge($map1: $theme-colors, $map2: $custom-colors);

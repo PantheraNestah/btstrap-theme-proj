@@ -261,6 +261,7 @@ main .section-prop-data .data-table-wrapper .ctable-title {
 }
 main .section-prop-data .data-table-wrapper table {
   margin-top: 3rem;
+  background-color: #ffe5d0;
 }
 main .section-prop-data .data-table-wrapper #clientsTable_filter, main .section-prop-data .data-table-wrapper #projTable_filter {
   margin-bottom: 2rem;
@@ -275,6 +276,10 @@ main .section-prop-data .data-table-wrapper #clientsTable_length, main .section-
 }
 main .section-prop-data .data-table-wrapper #projTable_info, main .section-prop-data .data-table-wrapper #projTable_paginate, main .section-prop-data .data-table-wrapper #clientsTable_info, main .section-prop-data .data-table-wrapper #clientsTable_paginate {
   font-size: 13px;
+}
+main .section-prop-data .data-table-wrapper .paginate_button {
+  padding: 4px 6px;
+  line-height: 17px;
 }
 main .section-prop-data .table-tab {
   background-color: #f8f9fa;
@@ -305,7 +310,7 @@ main .section-prop-data tbody {
   position: fixed;
   top: 5rem;
   left: 5rem;
-  bottom: 0;
+  bottom: 3rem;
   width: 12rem;
   padding-left: 0.6rem;
   background-color: #f8f9fa;
@@ -389,14 +394,15 @@ main .section-prop-data tbody {
   font-size: 20px;
 }
 
-.clientModal .modal-content, .prodModal .modal-content {
+.clientModal .modal-content, .prodModal .modal-content, .messageModal .modal-content {
   background-color: #ffe5d0;
 }
-.clientModal .myModal-title, .prodModal .myModal-title {
+.clientModal .myModal-title, .prodModal .myModal-title, .messageModal .myModal-title {
   font-size: 20px;
 }
 
 .modal-form {
+  height: 270px;
   width: 300px;
 }
 .modal-form label {
@@ -409,6 +415,20 @@ main .section-prop-data tbody {
 .modal-form .input-field {
   margin: 1rem auto;
   position: relative;
+}
+.modal-form .message-field {
+  width: 280px;
+  height: 150px;
+  margin: 0.5rem auto;
+}
+.modal-form .message-field label {
+  width: 280px;
+}
+.modal-form .message-field textarea {
+  resize: none;
+  width: 280px;
+  height: 120px;
+  margin-top: 1.2rem;
 }
 .modal-form .confirm-product {
   position: absolute;
@@ -503,7 +523,7 @@ footer .rights {
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-cprimary: #e35d6a;
-  --bs-cust-bg1: #ffe5d0;
+  --bs-csecondary: #ffe5d0;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -3626,7 +3646,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #e35d6a;
 }
 
-.btn-cust-bg1 {
+.btn-csecondary {
   --bs-btn-color: #000;
   --bs-btn-bg: #ffe5d0;
   --bs-btn-border-color: #ffe5d0;
@@ -3796,7 +3816,7 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-outline-cust-bg1 {
+.btn-outline-csecondary {
   --bs-btn-color: #ffe5d0;
   --bs-btn-border-color: #ffe5d0;
   --bs-btn-hover-color: #000;
@@ -5447,11 +5467,11 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-cprimary-text-emphasis);
 }
 
-.alert-cust-bg1 {
-  --bs-alert-color: var(--bs-cust-bg1-text-emphasis);
-  --bs-alert-bg: var(--bs-cust-bg1-bg-subtle);
-  --bs-alert-border-color: var(--bs-cust-bg1-border-subtle);
-  --bs-alert-link-color: var(--bs-cust-bg1-text-emphasis);
+.alert-csecondary {
+  --bs-alert-color: var(--bs-csecondary-text-emphasis);
+  --bs-alert-bg: var(--bs-csecondary-bg-subtle);
+  --bs-alert-border-color: var(--bs-csecondary-border-subtle);
+  --bs-alert-link-color: var(--bs-csecondary-text-emphasis);
 }
 
 @keyframes progress-bar-stripes {
@@ -5872,17 +5892,17 @@ textarea.form-control-lg {
   --bs-list-group-active-border-color: var(--bs-cprimary-text-emphasis);
 }
 
-.list-group-item-cust-bg1 {
-  --bs-list-group-color: var(--bs-cust-bg1-text-emphasis);
-  --bs-list-group-bg: var(--bs-cust-bg1-bg-subtle);
-  --bs-list-group-border-color: var(--bs-cust-bg1-border-subtle);
+.list-group-item-csecondary {
+  --bs-list-group-color: var(--bs-csecondary-text-emphasis);
+  --bs-list-group-bg: var(--bs-csecondary-bg-subtle);
+  --bs-list-group-border-color: var(--bs-csecondary-border-subtle);
   --bs-list-group-action-hover-color: var(--bs-emphasis-color);
-  --bs-list-group-action-hover-bg: var(--bs-cust-bg1-border-subtle);
+  --bs-list-group-action-hover-bg: var(--bs-csecondary-border-subtle);
   --bs-list-group-action-active-color: var(--bs-emphasis-color);
-  --bs-list-group-action-active-bg: var(--bs-cust-bg1-border-subtle);
-  --bs-list-group-active-color: var(--bs-cust-bg1-bg-subtle);
-  --bs-list-group-active-bg: var(--bs-cust-bg1-text-emphasis);
-  --bs-list-group-active-border-color: var(--bs-cust-bg1-text-emphasis);
+  --bs-list-group-action-active-bg: var(--bs-csecondary-border-subtle);
+  --bs-list-group-active-color: var(--bs-csecondary-bg-subtle);
+  --bs-list-group-active-bg: var(--bs-csecondary-text-emphasis);
+  --bs-list-group-active-border-color: var(--bs-csecondary-text-emphasis);
 }
 
 .btn-close {
@@ -7426,9 +7446,9 @@ textarea.form-control-lg {
   background-color: RGBA(var(--bs-cprimary-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-cust-bg1 {
+.text-bg-csecondary {
   color: #000 !important;
-  background-color: RGBA(var(--bs-cust-bg1-rgb), var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(var(--bs-csecondary-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .link-primary {
@@ -7512,11 +7532,11 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(233, 125, 136, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-cust-bg1 {
-  color: RGBA(var(--bs-cust-bg1-rgb), var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(var(--bs-cust-bg1-rgb), var(--bs-link-underline-opacity, 1)) !important;
+.link-csecondary {
+  color: RGBA(var(--bs-csecondary-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(var(--bs-csecondary-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-cust-bg1:hover, .link-cust-bg1:focus {
+.link-csecondary:hover, .link-csecondary:focus {
   color: RGBA(255, 234, 217, var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(255, 234, 217, var(--bs-link-underline-opacity, 1)) !important;
 }

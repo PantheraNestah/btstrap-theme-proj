@@ -94,6 +94,7 @@ main {
             }
             table {
                 margin-top: 3rem;
+                background-color: $cust-color2;
             }
             #clientsTable_filter, #projTable_filter {
                 margin-bottom: 2rem;
@@ -108,6 +109,10 @@ main {
             }
             #projTable_info, #projTable_paginate, #clientsTable_info, #clientsTable_paginate {
                 font-size: 13px;
+            }
+            .paginate_button {
+                padding: 4px 6px;
+                line-height: 17px;
             }
         }
         .table-tab {
@@ -138,7 +143,7 @@ main {
     position: fixed;
     top: 5rem;
     left: 5rem;
-    bottom: 0;
+    bottom: 3rem;
     width: 12rem;
     padding-left: 0.6rem;
     background-color: $cust-gray1;
@@ -214,7 +219,7 @@ main {
     color: $cust-dark1;
     font-size: 20px;
 }
-.clientModal, .prodModal {
+.clientModal, .prodModal, .messageModal {
     .modal-content {
         background-color: $cust-color2;
     }
@@ -223,6 +228,7 @@ main {
     }
 }
 .modal-form {
+    height: 270px;
     width: 300px;
     label {
         width: 100px;
@@ -234,6 +240,20 @@ main {
     .input-field {
         margin: 1rem auto;
         position: relative;
+    }
+    .message-field {
+        width: 280px;
+        height: 150px;
+        margin: 0.5rem auto;
+        label {
+            width: 280px;
+        }
+        textarea {
+            resize: none;
+            width: 280px;
+            height: 120px;
+            margin-top: 1.2rem;
+        }
     }
     .confirm-product {
         position: absolute;
