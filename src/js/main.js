@@ -131,6 +131,8 @@ var projsArray = [
 $(document).ready(() => {
     $("#clientsTable").DataTable(
         {
+            pagingType: "simple_numbers",
+            pageLength: 8,
             data: clientsArray,
             columns: [
                 {data: "id"},
@@ -142,6 +144,8 @@ $(document).ready(() => {
     )
     $("#projTable").DataTable(
         {
+            pagingType: "simple_numbers",
+            pageLength: 8,
             data: projsArray,
             columns: [
                 {data: "id"},

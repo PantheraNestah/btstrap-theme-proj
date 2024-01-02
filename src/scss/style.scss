@@ -23,4 +23,5 @@ $theme-colors: map-merge($map1: $theme-colors, $map2: $custom-colors);
 }
 body {
     background-color: $cust-color2;
+    position: relative;
 }

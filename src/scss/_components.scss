@@ -12,8 +12,10 @@
 
 
 main {
-    margin-top: 4rem;
+    margin-top: 5rem;
     margin-left: 22rem;
+    margin-bottom: 5rem;
+    z-index: 1000;
     .section-summary {
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -90,16 +92,36 @@ main {
                 color: $cust-gray7;
                 margin-left: 4rem;
             }
+            table {
+                margin-top: 3rem;
+            }
+            #clientsTable_filter, #projTable_filter {
+                margin-bottom: 2rem;
+            }
             #clientsTable_filter input, #projTable_filter input {
                 background-color: $cust-gray1;
                 width: 110px;
                 border-radius: 6px;
+            }
+            #clientsTable_length, #projTable_length {
+                display: none;
+            }
+            #projTable_info, #projTable_paginate, #clientsTable_info, #clientsTable_paginate {
+                font-size: 13px;
             }
         }
         .table-tab {
             background-color: $cust-gray1;
             height: 30px;
             width: 115px;
+        }
+        thead {
+            background-color: $cust-orange2;
+            border-bottom: none;
+            color: $cust-gray7;
+        }
+        tbody {
+            font-size: 14.5px;
         }
     }
 }
@@ -247,5 +269,20 @@ main {
     height: 150px;
     form {
         height: 120px;
+    }
+}
+footer {
+    height: 3rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, $cust-orange2, $cust-dark1);
+    margin-top: 2rem;
+    .rights {
+        height: 2rem;
+        width: 8rem;
+        font-size: 12.5px;
+        margin-top: 0.5rem;
+        margin-left: 22rem;
     }
 }

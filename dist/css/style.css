@@ -180,8 +180,10 @@
 }
 
 main {
-  margin-top: 4rem;
+  margin-top: 5rem;
   margin-left: 22rem;
+  margin-bottom: 5rem;
+  z-index: 1000;
 }
 main .section-summary {
   margin-top: 2rem;
@@ -257,15 +259,35 @@ main .section-prop-data .data-table-wrapper .ctable-title {
   color: #495057;
   margin-left: 4rem;
 }
+main .section-prop-data .data-table-wrapper table {
+  margin-top: 3rem;
+}
+main .section-prop-data .data-table-wrapper #clientsTable_filter, main .section-prop-data .data-table-wrapper #projTable_filter {
+  margin-bottom: 2rem;
+}
 main .section-prop-data .data-table-wrapper #clientsTable_filter input, main .section-prop-data .data-table-wrapper #projTable_filter input {
   background-color: #f8f9fa;
   width: 110px;
   border-radius: 6px;
 }
+main .section-prop-data .data-table-wrapper #clientsTable_length, main .section-prop-data .data-table-wrapper #projTable_length {
+  display: none;
+}
+main .section-prop-data .data-table-wrapper #projTable_info, main .section-prop-data .data-table-wrapper #projTable_paginate, main .section-prop-data .data-table-wrapper #clientsTable_info, main .section-prop-data .data-table-wrapper #clientsTable_paginate {
+  font-size: 13px;
+}
 main .section-prop-data .table-tab {
   background-color: #f8f9fa;
   height: 30px;
   width: 115px;
+}
+main .section-prop-data thead {
+  background-color: #fecba1;
+  border-bottom: none;
+  color: #495057;
+}
+main .section-prop-data tbody {
+  font-size: 14.5px;
 }
 
 .collapse-link {
@@ -424,6 +446,22 @@ main .section-prop-data .table-tab {
 }
 .prodModal .modal-form form {
   height: 120px;
+}
+
+footer {
+  height: 3rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, #fecba1, #984c0c);
+  margin-top: 2rem;
+}
+footer .rights {
+  height: 2rem;
+  width: 8rem;
+  font-size: 12.5px;
+  margin-top: 0.5rem;
+  margin-left: 22rem;
 }
 
 /*!
@@ -12547,4 +12585,5 @@ textarea.form-control-lg {
 
 body {
   background-color: #ffe5d0;
+  position: relative;
 }
