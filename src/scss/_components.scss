@@ -50,11 +50,41 @@ main {
             background-color: $cust-gray1;
             position: relative;
             .hightlight-slider-text {
+                padding-left: 1.5rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                border-radius: 4px;
+                background-color: rgba(0,0,0,0.2);
                 position: absolute;
+                z-index: 1000;
                 top: 0.5rem;
                 left: 0.8rem;
                 font-size: 14.6px;
-                color: $cust-gray7;
+                color: $cust-gray1;
+            }
+            /* .hightlight-slider-img {
+                position: relative;
+            } */
+            .carousel-item img {
+                width: 360px;
+                height: 220px;
+                border-radius: $card-border-radius;
+            }
+            .carousel-control-prev-icon, .carousel-control-next-icon {
+                color: $cust-gray1;
+            }
+            .carousel-control-prev, .carousel-control-next {
+                position: relative;
+            }
+            .carousel-control-prev-icon {
+                position: absolute;
+                left: 7rem;
+                bottom: 1rem;
+            }
+            .carousel-control-next-icon {
+                position: absolute;
+                left: 14rem;
+                bottom: 1rem;
             }
         }
     }
@@ -91,6 +121,16 @@ main {
             .ctable-title {
                 color: $cust-gray7;
                 margin-left: 4rem;
+                .prodSelect {
+                    font-size: 15px;
+                    select {
+                        color: $cust-gray7;
+                        border: 1px solid $cust-dark1;
+                        border-radius: 5px;
+                        background-color: $cust-color2;
+                        cursor: pointer;
+                    }
+                }
             }
             table {
                 margin-top: 3rem;

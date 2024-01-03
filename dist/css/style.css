@@ -215,13 +215,43 @@ main .section-summary-board .hightlight-slider {
   margin-top: 1rem;
   background-color: #f8f9fa;
   position: relative;
+  /* .hightlight-slider-img {
+      position: relative;
+  } */
 }
 main .section-summary-board .hightlight-slider .hightlight-slider-text {
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
+  z-index: 1000;
   top: 0.5rem;
   left: 0.8rem;
   font-size: 14.6px;
-  color: #495057;
+  color: #f8f9fa;
+}
+main .section-summary-board .hightlight-slider .carousel-item img {
+  width: 360px;
+  height: 220px;
+  border-radius: var(--bs-border-radius);
+}
+main .section-summary-board .hightlight-slider .carousel-control-prev-icon, main .section-summary-board .hightlight-slider .carousel-control-next-icon {
+  color: #f8f9fa;
+}
+main .section-summary-board .hightlight-slider .carousel-control-prev, main .section-summary-board .hightlight-slider .carousel-control-next {
+  position: relative;
+}
+main .section-summary-board .hightlight-slider .carousel-control-prev-icon {
+  position: absolute;
+  left: 7rem;
+  bottom: 1rem;
+}
+main .section-summary-board .hightlight-slider .carousel-control-next-icon {
+  position: absolute;
+  left: 14rem;
+  bottom: 1rem;
 }
 main .section-prop-data {
   background-color: #f8f9fa;
@@ -258,6 +288,16 @@ main .section-prop-data .data-table-wrapper .div-table-tabs {
 main .section-prop-data .data-table-wrapper .ctable-title {
   color: #495057;
   margin-left: 4rem;
+}
+main .section-prop-data .data-table-wrapper .ctable-title .prodSelect {
+  font-size: 15px;
+}
+main .section-prop-data .data-table-wrapper .ctable-title .prodSelect select {
+  color: #495057;
+  border: 1px solid #984c0c;
+  border-radius: 5px;
+  background-color: #ffe5d0;
+  cursor: pointer;
 }
 main .section-prop-data .data-table-wrapper table {
   margin-top: 3rem;
