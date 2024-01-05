@@ -1,4 +1,6 @@
 
+/* import echarts from 'echarts' */
+
 var clientsArray = [
     {
         "id":"1",
@@ -162,4 +164,132 @@ $(document).ready(() => {
         }
     )
 })
+var clientsGraph = echarts.init(document.getElementById("clientsGraph"))
+var propGraph = echarts.init(document.getElementById("propGraph"))
 
+var gradientColor = new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+    { offset: 0, color: 'rgba(29,140,248,0.5)' },   // Start color
+    { offset: 1, color: 'rgba(29,140,248,0)' }      // End color
+], false)
+
+var clientGraphOption = {
+    grid: {
+        top: "20%",
+        bottom: "20%",
+        left: "10%",
+        right: "10%"
+    },
+    xAxis: {
+        data: ["Jan","Apr","Aug","Dec"],
+        axisLine: {
+            show: false,
+        },
+        axisLabel: {
+            show: false,
+        },
+        axisTick: {
+            show: false,
+        }
+    },
+   tooltip: {
+    trigger: "axis"
+   },
+    yAxis: [
+        {
+            type: "value",
+            min: 15,
+            max: 80,
+            position: "rignt",
+            axisLine: {
+                show: false
+            },
+            axisLabel: {
+                show: false,
+            },
+            splitLine: {
+                show: false,
+            },
+        },
+        {
+            splitLine: {},
+        }
+    ],
+    series: [
+        {
+            name: "Clients",
+            yAxisIndex: 0,
+            data: [20,47,63,79],
+            type: "line",
+            smooth: true,
+            symbol: "none",
+            lineStyle: {
+                    shadowColor: 'rgba(0, 0, 0, 0.5)',
+                    shadowBlur: 10
+            },
+            areaStyle: {
+                color: gradientColor
+            }
+        }
+    ],
+    animation: true,
+    animationEasing: "quadraticInOut",
+}
+
+var propGraphOption = {
+	title: {
+        show: true,
+		text: "40+",
+		left: "center",
+		top: "center",
+        fontSize: "30"
+	},
+	tooltip: {},
+	legend: {
+        show: false,
+        type: "scroll",
+        orient: "vertical",
+        left: 0,
+        bottom: 0,
+		data: ["Sold","Leased","Unfinished","Free"]
+	},
+	series: [
+		{
+			type: "pie",
+			data: [
+				{
+					value: 17,
+					name: "Sold"
+				},
+				{
+					value: 23,
+					name: "Leased"
+				},
+				{
+					value: 15,
+					name: "Unfinished"
+				},
+				{
+					value: 17,
+					name: "Free"
+				}
+			],
+			radius: ["50%", "55%"],
+			avoidLabelOverlap: false,
+			label: {
+				show: false,
+			},
+			labelLine: {
+				show: false
+			},
+			emphasis: {
+				label: {
+					show: false,
+					fontSize: "8",
+					fontWeight: "bold"
+				}
+			}
+		}
+	]	
+}
+clientsGraph.setOption(clientGraphOption)
+propGraph.setOption(propGraphOption)

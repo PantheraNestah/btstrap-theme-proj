@@ -197,29 +197,34 @@ main .section-summary-board .card {
 main .section-summary-board .badge {
   background-color: #479f76;
 }
-main .section-summary-board .co-hightlight div.card {
-  height: 120px;
+main .section-summary-board .co-highlight div.myCard {
+  height: 150px;
   width: 360px;
   background-color: #f8f9fa;
+  position: relative;
+  border-radius: var(--bs-border-radius);
 }
-main .section-summary-board .co-hightlight div.card div.content {
+main .section-summary-board .co-highlight div.myCard div.content {
   height: 100px;
   margin-top: 10px;
-  margin-left: 20px;
+  padding-left: 20px;
   color: #495057;
   font-size: 14.6px;
 }
-main .section-summary-board .hightlight-slider {
+main .section-summary-board .co-highlight #propGraph, main .section-summary-board .co-highlight #clientsGraph {
+  height: 150px;
+}
+main .section-summary-board .highlight-slider {
   height: 220px;
   width: 360px;
   margin-top: 1rem;
   background-color: #f8f9fa;
   position: relative;
-  /* .hightlight-slider-img {
+  /* .highlight-slider-img {
       position: relative;
   } */
 }
-main .section-summary-board .hightlight-slider .hightlight-slider-text {
+main .section-summary-board .highlight-slider .highlight-slider-text {
   padding-left: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -232,23 +237,23 @@ main .section-summary-board .hightlight-slider .hightlight-slider-text {
   font-size: 14.6px;
   color: #f8f9fa;
 }
-main .section-summary-board .hightlight-slider .carousel-item img {
+main .section-summary-board .highlight-slider .carousel-item img {
   width: 360px;
   height: 220px;
   border-radius: var(--bs-border-radius);
 }
-main .section-summary-board .hightlight-slider .carousel-control-prev-icon, main .section-summary-board .hightlight-slider .carousel-control-next-icon {
+main .section-summary-board .highlight-slider .carousel-control-prev-icon, main .section-summary-board .highlight-slider .carousel-control-next-icon {
   color: #f8f9fa;
 }
-main .section-summary-board .hightlight-slider .carousel-control-prev, main .section-summary-board .hightlight-slider .carousel-control-next {
+main .section-summary-board .highlight-slider .carousel-control-prev, main .section-summary-board .highlight-slider .carousel-control-next {
   position: relative;
 }
-main .section-summary-board .hightlight-slider .carousel-control-prev-icon {
+main .section-summary-board .highlight-slider .carousel-control-prev-icon {
   position: absolute;
   left: 7rem;
   bottom: 1rem;
 }
-main .section-summary-board .hightlight-slider .carousel-control-next-icon {
+main .section-summary-board .highlight-slider .carousel-control-next-icon {
   position: absolute;
   left: 14rem;
   bottom: 1rem;
@@ -364,6 +369,15 @@ main .section-prop-data tbody {
   .nav-div-drop .staff-prof-sm {
     display: none;
   }
+}
+.nav-div-drop .div-recents a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #495057;
+}
+.nav-div-drop .div-recents div {
+  height: 18rem;
+  background-color: #479f76;
 }
 
 .navbar-toggler-wrapper {

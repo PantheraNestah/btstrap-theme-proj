@@ -72,6 +72,12 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="div-recents d-flex flex-column">
+                        <span>
+                            <a href="#">Recent Activities</a>
+                        </span>
+                        <div></div>
+                    </div>
                 </div>
             </div>
             <section class="col-lg-10 section-quick-acc">
@@ -79,29 +85,35 @@
                     <div class="div-co-name">
                         <h1>Meladen Properties ltd</h1>
                     </div>
-                    <div class="dropdown">
-                        <a id="dropmenuAcc" class="div-staff-prof show" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="../imgs/AI-Profile-Picture.jpg" alt="AI generated image" style="width: 30px;height: 30px;border-radius: 50%;">
-                        </a>
-                        <div id="staff-accessories" class="dropdown-menu dropdown-menu-end staff-accessories" aria-labelled-by="dropmenuAcc" data-bs-popper="static">
-                            <span class="header-wrapper d-flex align-items-center justify-content-center">
-                                <h2 class="text-center">Profile & account</h2>
-                            </span>
-                            <ul class="d-flex flex-column justify-content-between mx-auto">
-                                <li>
-                                    <span><i class="bi bi-bell-fill btsp-icons"></i></span>
-                                    <span>Notifications</span>
-                                </li>
-                                <li>
-                                    <span><i class="bi bi-gear-fill btsp-icons"></i></span>
-                                    <span>Settings</span>
-                                </li>
-                                <li>
-                                    <span><i class="bi bi-box-arrow-right btsp-icons"></i></span>
-                                    <span>Logout</span>
-                                </li>
-                            </ul>
+                    <div class="dropdown col-2 d-flex justify-content-end">
+                        <div class="d-flex col-7 justify-content-between">
+                            <a class="" role="button">
+                                <i class="bi bi-bell-fill btsp-icons"></i>
+                            </a>
+                            <a id="dropmenuAcc" class="div-staff-prof show" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../imgs/AI-Profile-Picture.jpg" alt="AI generated image" style="width: 30px;height: 30px;border-radius: 50%;">
+                            </a>
+                            <div id="staff-accessories" class="dropdown-menu dropdown-menu-end staff-accessories" aria-labelled-by="dropmenuAcc" data-bs-popper="static">
+                                <span class="header-wrapper d-flex align-items-center justify-content-center">
+                                    <h2 class="text-center">Profile & account</h2>
+                                </span>
+                                <ul class="d-flex flex-column justify-content-between mx-auto">
+                                    <li>
+                                        <span><i class="bi bi-bell-fill btsp-icons"></i></span>
+                                        <span>Notifications</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-gear-fill btsp-icons"></i></span>
+                                        <span>Settings</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-box-arrow-right btsp-icons"></i></span>
+                                        <span>Logout</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </section>
@@ -110,30 +122,32 @@
     <main class="col-lg-8">
         <section class="section-summary col-10 mx-auto">
             <div class="section-summary-board col-12">
-                <div class="co-hightlight col-12 mx-auto d-flex justify-content-between">
-                    <div class="card mx-auto col-6">
+                <div class="co-highlight col-12 mx-auto d-flex justify-content-between">
+                    <div class="myCard mx-auto col-6 d-flex align-items-center">
                         <div class="content d-flex flex-column justify-content-end col-5">
                             <span class="text-center" style="font-size: 16px;margin-top: -2rem;">Clients</span>
                             <span>Last 6 months</span>
                             <p class="col-10" style="margin: 0;">100+ clients</p>
                             <span><span class="badge text-center rounded-pill" style="font-size: 10px;">+2.15%</span> p.m</span>
                         </div>
+                        <div id="clientsGraph" class="col-7 d-flex align-items-center justify-content-center"></div>
                     </div>
-                    <div class="card mx-auto col-6">
+                    <div class="myCard mx-auto col-6 d-flex align-items-center">
                         <div class="content d-flex flex-column justify-content-end col-5">
                             <span class="text-center" style="font-size: 16px;margin-top: -2rem;">Properties</span>
                             <span>Last 6 months</span>
                             <p class="col-10" style="margin: 0;">40+ properties</p>
                             <span><span class="badge text-center rounded-pill" style="font-size: 10px;">+1.05%</span> p.m</span>
                         </div>
+                        <div id="propGraph" class="col-7  d-flex align-items-center justify-content-center"></div>
                     </div>
                 </div>
                 <div class="col-12 d-flex">
-                    <div class="hightlight-slider card mx-auto col-6">
-                        <div class="hightlight-slider-text d-flex flex-column align-items-left col-5">
+                    <div class="highlight-slider card mx-auto col-6">
+                        <div class="highlight-slider-text d-flex flex-column align-items-left col-5">
                             <span>Satisfied clients</span>
                         </div>
-                        <div id="clientsImgsCorousel" class="carousel slide hightlight-slider-img" data-bs-ride="carousel">
+                        <div id="clientsImgsCorousel" class="carousel slide highlight-slider-img" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="../imgs/AI-gen-clients1.jpg" alt="" class="d-block">
@@ -158,12 +172,12 @@
                             </button>
                         </div>
                     </div>
-                    <div class="hightlight-slider card mx-auto col-6">
-                        <div class="hightlight-slider-text d-flex flex-column align-items-left col-5">
+                    <div class="highlight-slider card mx-auto col-6">
+                        <div class="highlight-slider-text d-flex flex-column align-items-left col-5">
                             <span>Properties</span>
                             <span>Property Name</span>
                         </div>
-                        <div id="propImgsCarousel" class="carousel slide hightlight-slider-img" data-bs-ride="carousel">
+                        <div id="propImgsCarousel" class="carousel slide highlight-slider-img" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="../imgs/AI-gen-prop1.jpg" alt="">
@@ -394,6 +408,7 @@
     <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/select/1.3.4/js/dataTables.select.js"></script>
+    <script src="../js/echarts.js"></script>
     <!-- <script src="../js/jquery.dataTables.js"></script>
     <script src="../js/dataTables.bootstrap5.js"></script> -->
     <script src="../js/index.js"></script>

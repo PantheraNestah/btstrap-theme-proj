@@ -29,27 +29,32 @@ main {
         .badge {
             background-color: $cust-green4;
         }
-        .co-hightlight {
-            div.card {
-                height: 120px;
+        .co-highlight {
+            div.myCard {
+                height: 150px;
                 width: 360px;
                 background-color: $cust-gray1;
+                position: relative;
+                border-radius: $card-border-radius;
                 div.content {
                     height: 100px;
                     margin-top: 10px;
-                    margin-left: 20px;
+                    padding-left: 20px;
                     color: $cust-gray7;
                     font-size: 14.6px;
                 }
             }
+            #propGraph, #clientsGraph {
+                height: 150px;
+            }
         }
-        .hightlight-slider {
+        .highlight-slider {
             height: 220px;
             width: 360px;
             margin-top: 1rem;
             background-color: $cust-gray1;
             position: relative;
-            .hightlight-slider-text {
+            .highlight-slider-text {
                 padding-left: 1.5rem;
                 padding-top: 0.5rem;
                 padding-bottom: 0.5rem;
@@ -62,7 +67,7 @@ main {
                 font-size: 14.6px;
                 color: $cust-gray1;
             }
-            /* .hightlight-slider-img {
+            /* .highlight-slider-img {
                 position: relative;
             } */
             .carousel-item img {
@@ -194,6 +199,17 @@ main {
         margin-top: 1.5rem;
         margin-right: 0.8rem;
         margin-bottom: 1rem;
+    }
+    .div-recents {
+        a {
+            text-decoration: none;
+            font-size: 15px;
+            color: $cust-gray7;
+        }
+        div {
+            height: 18rem;
+            background-color: $cust-green4;
+        }
     }
 }
 .navbar-toggler-wrapper {
