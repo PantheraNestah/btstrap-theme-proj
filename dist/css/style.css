@@ -339,6 +339,57 @@ main .section-prop-data thead {
 main .section-prop-data tbody {
   font-size: 14.5px;
 }
+main .current-staff {
+  border-radius: 4px;
+}
+main .current-staff .div-current-staff-prof {
+  height: 26rem;
+  background-color: #f8f9fa;
+  position: relative;
+}
+main .current-staff .prof-header {
+  height: 10rem; /* 
+background-image: url("../imgs/logo-image3.jpg");
+background-size: 80% 80%; */
+  background-color: #051b11;
+}
+main .current-staff div.profile-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4.7rem;
+  left: 3rem;
+  background-color: #f8f9fa;
+}
+main .current-staff div.profile-img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+main .current-staff .prof-body {
+  height: 16rem;
+}
+main .current-staff .prof-body .info-container {
+  margin-top: 5.3rem;
+}
+main .current-staff .prof-body .info-container :nth-child(2) article {
+  margin: 5px 0px;
+}
+main .current-staff .prof-body .info-container :nth-child(2) article i {
+  font-size: 28px;
+}
+main .current-staff .prof-body .info-container a {
+  text-decoration: none;
+}
+main .current-staff .prof-body .info-container .quick-contact {
+  margin-top: 0.8rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+main .current-staff .prof-body .info-container a.btn {
+  font-size: 13px;
+}
 
 .collapse-link {
   text-decoration: none;

@@ -174,6 +174,59 @@ main {
             font-size: 14.5px;
         }
     }
+    .current-staff {
+        border-radius: 4px;
+        .div-current-staff-prof {
+            height: 26rem;
+            background-color: $cust-gray1;
+            position: relative;
+        }
+        .prof-header {
+            height: 10rem;/* 
+            background-image: url("../imgs/logo-image3.jpg");
+            background-size: 80% 80%; */
+            background-color: $green-900;
+        }
+        div.profile-img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            position: absolute;
+            top: 4.7rem;
+            left: 3rem;
+            background-color: $cust-gray1;
+            img {
+                width: 160px;
+                height: 160px;
+                border-radius: 50%;
+            }
+        }
+        .prof-body {
+            height: 16rem;
+            .info-container {
+                margin-top: 5.3rem;
+                :nth-child(2) {
+                    article {
+                        margin: 5px 0px;
+                        i {
+                            font-size: 28px;
+                        }
+                    }
+                }
+                a {
+                    text-decoration: none;
+                }
+                .quick-contact {
+                    margin-top: 0.8rem;
+                    padding-left: 0.6rem;
+                    padding-right: 0.6rem;
+                }
+                a.btn {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
 }
 .collapse-link {
     text-decoration: none;
