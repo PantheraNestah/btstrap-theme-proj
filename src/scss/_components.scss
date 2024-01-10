@@ -12,8 +12,9 @@
 
 
 main {
-    margin-top: 5rem;
-    margin-left: 22rem;
+    margin-top: 5rem;/* 
+    margin-left: 22rem; */
+    margin-left: 20.8rem;
     margin-bottom: 5rem;
     z-index: 1000;
     .section-summary {
@@ -116,6 +117,7 @@ main {
             margin-top: 2rem;
             padding-top: 1.5rem;
             padding-bottom: 3rem;
+            position: relative;
             .div-table-tabs {
                 height: 60px;
                 padding: 4px;
@@ -141,23 +143,37 @@ main {
                 margin-top: 3rem;
                 background-color: $cust-color2;
             }
-            #clientsTable_filter, #projTable_filter {
+            #clientsTable_filter, #projTable_filter, #staff-table_filter {
                 margin-bottom: 2rem;
             }
-            #clientsTable_filter input, #projTable_filter input {
+            #clientsTable_filter input,  #projTable_filter input, #staff-table_filter input {
                 background-color: $cust-gray1;
                 width: 110px;
                 border-radius: 6px;
             }
-            #clientsTable_length, #projTable_length {
+            #clientsTable_length, #projTable_length, #staff-table_length {
                 display: none;
             }
-            #projTable_info, #projTable_paginate, #clientsTable_info, #clientsTable_paginate {
+            #projTable_info, #projTable_paginate, #clientsTable_info, #clientsTable_paginate, #staff-table_info, #staff-table_paginate {
                 font-size: 13px;
             }
             .paginate_button {
                 padding: 4px 6px;
                 line-height: 17px;
+            }
+            .staff-plus {
+                background-color: $cust-gray1;
+                position: absolute;
+                top: 4rem;
+                left: 4rem;
+                box-shadow: 1px 1px 4px 0.6px rgba(0,0,0,0.2);
+                a {
+                    text-decoration: none;
+                    font-weight: 400;
+                }
+                i {
+                    font-size: 26;
+                }
             }
         }
         .table-tab {
@@ -176,6 +192,7 @@ main {
     }
     .current-staff {
         border-radius: 4px;
+        margin-bottom: 6rem;
         .div-current-staff-prof {
             height: 26rem;
             background-color: $cust-gray1;

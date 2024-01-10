@@ -180,8 +180,9 @@
 }
 
 main {
-  margin-top: 5rem;
-  margin-left: 22rem;
+  margin-top: 5rem; /* 
+margin-left: 22rem; */
+  margin-left: 20.8rem;
   margin-bottom: 5rem;
   z-index: 1000;
 }
@@ -282,6 +283,7 @@ main .section-prop-data .data-table-wrapper {
   margin-top: 2rem;
   padding-top: 1.5rem;
   padding-bottom: 3rem;
+  position: relative;
 }
 main .section-prop-data .data-table-wrapper .div-table-tabs {
   height: 60px;
@@ -308,23 +310,37 @@ main .section-prop-data .data-table-wrapper table {
   margin-top: 3rem;
   background-color: #ffe5d0;
 }
-main .section-prop-data .data-table-wrapper #clientsTable_filter, main .section-prop-data .data-table-wrapper #projTable_filter {
+main .section-prop-data .data-table-wrapper #clientsTable_filter, main .section-prop-data .data-table-wrapper #projTable_filter, main .section-prop-data .data-table-wrapper #staff-table_filter {
   margin-bottom: 2rem;
 }
-main .section-prop-data .data-table-wrapper #clientsTable_filter input, main .section-prop-data .data-table-wrapper #projTable_filter input {
+main .section-prop-data .data-table-wrapper #clientsTable_filter input, main .section-prop-data .data-table-wrapper #projTable_filter input, main .section-prop-data .data-table-wrapper #staff-table_filter input {
   background-color: #f8f9fa;
   width: 110px;
   border-radius: 6px;
 }
-main .section-prop-data .data-table-wrapper #clientsTable_length, main .section-prop-data .data-table-wrapper #projTable_length {
+main .section-prop-data .data-table-wrapper #clientsTable_length, main .section-prop-data .data-table-wrapper #projTable_length, main .section-prop-data .data-table-wrapper #staff-table_length {
   display: none;
 }
-main .section-prop-data .data-table-wrapper #projTable_info, main .section-prop-data .data-table-wrapper #projTable_paginate, main .section-prop-data .data-table-wrapper #clientsTable_info, main .section-prop-data .data-table-wrapper #clientsTable_paginate {
+main .section-prop-data .data-table-wrapper #projTable_info, main .section-prop-data .data-table-wrapper #projTable_paginate, main .section-prop-data .data-table-wrapper #clientsTable_info, main .section-prop-data .data-table-wrapper #clientsTable_paginate, main .section-prop-data .data-table-wrapper #staff-table_info, main .section-prop-data .data-table-wrapper #staff-table_paginate {
   font-size: 13px;
 }
 main .section-prop-data .data-table-wrapper .paginate_button {
   padding: 4px 6px;
   line-height: 17px;
+}
+main .section-prop-data .data-table-wrapper .staff-plus {
+  background-color: #f8f9fa;
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  box-shadow: 1px 1px 4px 0.6px rgba(0, 0, 0, 0.2);
+}
+main .section-prop-data .data-table-wrapper .staff-plus a {
+  text-decoration: none;
+}
+main .section-prop-data .data-table-wrapper .staff-plus i {
+  font-size: 26;
+  font-weight: 400;
 }
 main .section-prop-data .table-tab {
   background-color: #f8f9fa;
@@ -341,6 +357,7 @@ main .section-prop-data tbody {
 }
 main .current-staff {
   border-radius: 4px;
+  margin-bottom: 6rem;
 }
 main .current-staff .div-current-staff-prof {
   height: 26rem;
