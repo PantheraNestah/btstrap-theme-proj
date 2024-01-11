@@ -103,34 +103,76 @@
                     </div>
                     <div class="dropdown col-2 d-flex justify-content-end">
                         <div class="d-flex col-7 justify-content-between">
-                            <a class="" role="button" href="#notificationsOffcanvas" data-bs-toggle="offcanvas" aria-controls="notificationsOffcanvas">
-                                <i class="bi bi-bell-fill btsp-icons"></i>
+                            <a href="" class="me-2 f-6">
+                                <span><i class="bi bi-box-arrow-right btsp-icons f-5"></i></span>
                             </a>
-                            <a id="dropmenuAcc" class="div-staff-prof show" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="me-2 f-6" role="button" href="#notificationsOffcanvas" data-bs-toggle="offcanvas" aria-controls="notificationsOffcanvas">
+                                <i class="bi bi-bell-fill btsp-icons f-5"></i>
+                            </a>
+                            <a class="div-staff-prof" href="#settingsOffcanvas" data-bs-toggle="offcanvas" aria-controls="settingsOffcanvas">
                                 <img src="../imgs/AI-Profile-Picture.jpg" alt="AI generated image" style="width: 30px;height: 30px;border-radius: 50%;">
                             </a>
-                            <div id="staff-accessories" class="dropdown-menu dropdown-menu-end staff-accessories" aria-labelled-by="dropmenuAcc" data-bs-popper="static">
+                            <div class="offcanvas offcanvas-end" id="notificationsOffcanvas" aria-labelledby="offcanvasLabel">
+                                <div class="offcanvas-header">
+                                    <h2 class="offcanvas-title" id="offcanvasLabel" style="font-size: 22px;">Notifications</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body"></div>
+                            </div>
+                            <div class="offcanvas offcanvas-end" id="settingsOffcanvas" aria-labelledby="settingsLabel">
+                                <div class="offcanvas-header">
+                                    <h2 class="offcanvas-title" id="settingsLabel" style="font-size: 22px;">Account Settings</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <hr>
+                                <div class="offcanvas-body border">
+                                    <article>
+                                        <div class="div-current-profile d-flex align-items-center justify-content-center">
+                                            <img src="../imgs/AI-Profile-Picture.jpg" alt="">
+                                        </div>
+                                    </article>
+                                    <article class="article-staff-details">
+                                        <div class="staff-details">
+                                            <form action="" class="d-flex flex-column justify-content-between col-11">
+                                                <span class="d-flex justify-content-between">
+                                                    <label for="">Email</label>
+                                                    <input class="txt-input" type="email" placeholder="name@example.com">
+                                                </span>
+                                                <span class="d-flex justify-content-between">
+                                                    <label for="">Phone</label>
+                                                    <input class="txt-input" type="text" placeholder="+254798765432">
+                                                </span>
+                                                <span class="d-flex justify-content-between">
+                                                    <label for="">Profile</label>
+                                                    <input type="file" class="ms-3">
+                                                </span>
+                                                <div>
+                                                    <input type="submit" value="Save" class="btn btn-cprimary" style="width: 60px;">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <!-- <div id="staff-accessories" class="dropdown-menu dropdown-menu-end staff-accessories" aria-labelled-by="dropmenuAcc" data-bs-popper="static">
                                 <span class="header-wrapper d-flex align-items-center justify-content-center">
                                     <h2 class="text-center">Profile & account</h2>
                                 </span>
                                 <ul class="d-flex flex-column justify-content-between mx-auto">
                                     <li>
-                                        <span><i class="bi bi-gear-fill btsp-icons"></i></span>
-                                        <span>Settings</span>
+                                        <a href="#settingsOffcanvas" data-bs-toggle="offcanvas" aria-controls="settingsOffcanvas">
+                                            <span><i class="bi bi-gear-fill btsp-icons"></i></span>
+                                            <span>Settings</span>
+                                        </a>
                                     </li>
                                     <li>
-                                        <span><i class="bi bi-box-arrow-right btsp-icons"></i></span>
-                                        <span>Logout</span>
+                                        <a href="">
+                                            <span><i class="bi bi-box-arrow-right btsp-icons"></i></span>
+                                            <span>Logout</span>
+                                        </a>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class="offcanvas offcanvas-end" id="notificationsOffcanvas" aria-labelledby="offcanvasLabel">
-                                <div class="offcanvas-header">
-                                    <h2 class="offcanvas-title" id="offcanvasLabel">Notifications</h2>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body"></div>
-                            </div>
+                            </div> -->
                         </div>
                         
                     </div>

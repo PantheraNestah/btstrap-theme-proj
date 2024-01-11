@@ -482,6 +482,49 @@ main .current-staff .prof-body .info-container a.btn {
 .div-quick-acc .div-co-name h1, .div-quick-acc .div-co-name .h1 {
   font-size: 18px;
 }
+.div-quick-acc .offcanvas {
+  background-color: #f8f9fa;
+}
+.div-quick-acc .offcanvas .div-current-profile {
+  background-color: #051b11;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+.div-quick-acc .offcanvas .div-current-profile img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+.div-quick-acc .offcanvas hr {
+  width: 2px;
+  color: #ffe5d0;
+  border: 3px solid #ffe5d0;
+}
+.div-quick-acc .offcanvas .article-staff-details {
+  background-color: #ffe5d0;
+  margin-top: 1rem;
+  height: 22rem;
+}
+.div-quick-acc .offcanvas .staff-details {
+  padding-top: 3rem;
+  padding-left: 2rem;
+  height: 18rem;
+}
+.div-quick-acc .offcanvas .staff-details form {
+  height: 12rem;
+}
+.div-quick-acc .offcanvas .staff-details form span {
+  width: 280px;
+}
+.div-quick-acc .offcanvas .staff-details label {
+  width: 70px;
+}
+.div-quick-acc .offcanvas .staff-details .txt-input {
+  width: 170px;
+  text-align: center;
+}
 
 .div-staff-prof {
   width: 30px;
