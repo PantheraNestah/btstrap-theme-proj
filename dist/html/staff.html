@@ -54,8 +54,8 @@
                                 </span> Projects
                             </a>
                             <div class="collapse mini-menu" id="proj-menu">
-                                <a class="d-block collapse-link" data-bs-toggle="modal" data-bs-target="#prodModal">Add project</a>
-                                <a class="d-block collapse-link">Manage</a>
+                                <a class="d-block collapse-link" data-bs-toggle="modal" href="#prodModal">Add project</a>
+                                <!-- <a class="d-block collapse-link">Manage</a> -->
                             </div>
                         </li>
                         <li class="nav-item">
@@ -63,17 +63,17 @@
                                 <i class="bi bi-people-fill btsp-icons me-2"></i>Clients
                             </a>
                             <div class="collapse mini-menu" id="clients-menu">
-                                <a class="d-block collapse-link" data-bs-toggle="modal" data-bs-target="#clientModal">Add Client</a>
-                                <a class="d-block collapse-link">Manage</a>
+                                <a class="d-block collapse-link" data-bs-toggle="modal" href="#clientModal">Add Client</a>
+                                <!-- <a class="d-block collapse-link">Manage</a> -->
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center" href="#staff-menu" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="staff-menu">
+                            <a class="nav-link d-flex align-items-center" href="#">
                                 <i class="bi bi-shield-fill-exclamation btsp-icons me-2"></i> Staff
-                            </a>
+                            </a><!-- 
                             <div class="collapse mini-menu" id="staff-menu">
                                 <a class="d-block collapse-link">Manage</a>
-                            </div>
+                            </div> -->
                         </li>
                         <li class="nav-item div-recents">
                             <a href="#activities-log" class="nav-link d-flex align-items-center" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="activities-log">
@@ -81,7 +81,9 @@
                                     work_history
                                 </span> Recent Activities
                             </a>
-                            <div class="collapse show" id="activities-log"></div>
+                            <div class="collapse show d-flex justify-content-center align-items-center" id="activities-log">
+                                <span>Activities appear here...</span>
+                            </div>
                         </li>
                         <li class="nav-item support">
                             <a href="#support" class="nav-link d-flex align-items-center" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="support">
@@ -101,7 +103,7 @@
                     </div>
                     <div class="dropdown col-2 d-flex justify-content-end">
                         <div class="d-flex col-7 justify-content-between">
-                            <a class="" role="button">
+                            <a class="" role="button" href="#notificationsOffcanvas" data-bs-toggle="offcanvas" aria-controls="notificationsOffcanvas">
                                 <i class="bi bi-bell-fill btsp-icons"></i>
                             </a>
                             <a id="dropmenuAcc" class="div-staff-prof show" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -122,14 +124,28 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="offcanvas offcanvas-end" id="notificationsOffcanvas" aria-labelledby="offcanvasLabel">
+                                <div class="offcanvas-header">
+                                    <h2 class="offcanvas-title" id="offcanvasLabel">Notifications</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body"></div>
+                            </div>
                         </div>
-                        
                     </div>
                 </div>
             </section>
         </nav>
     </header>
     <main class="col-lg-8">
+        <section style="margin-bottom: 3rem;padding-left: 3rem;">
+            <div aria-label="breadcrumb" style="margin-top: 2rem;">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./home.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Staff</li>
+                </ol>
+            </div>
+        </section>
         <section class="current-staff col-10 mx-auto">
             <div class="div-current-staff-prof">
                 <div class="prof-header">
@@ -181,14 +197,15 @@
                 <div class="ctable-title col-5 d-flex flex-column align-items-left">
                     <span>Staff Details</span>
                 </div>
-                <div class="staff-plus p-1">
-                    <a href=""><i class="bi bi-plus-lg me-2"></i> New</a>
+                <div class="staff-plus p-1 d-flex justify-content-between align-items-center">
+                    <a href="#" class="btn me-2 p-1"><i class="bi bi-plus-lg me-2"></i> New</a>
+                    <a id="rows-action" href="#" class="btn ms-2 p-1">Action</a>
                 </div>
                 <div class="col-11 mx-auto">
                     <table id="staff-table" class="hover stripe">
                         <thead>
                             <tr>
-                                <th></th>
+                                <th>Id</th>
                                 <th>Name</th>
                                 <th>Department</th>
                                 <th>Phone</th>
@@ -199,6 +216,94 @@
                         </tbody>
                         <tfoot></tfoot>
                     </table>
+                </div>
+            </div>
+        </section>
+        <section id="clientModal" class="modal fade clientModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title myModal-title">Client Registration</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-form">
+                            <form action="" class="d-flex flex-column justify-content-between">
+                                <span class="input-field d-flex justify-content-between">
+                                    <label for="productId">Product Id</label>
+                                    <input class="text-center" type="text" id="productId" placeholder="search by id">
+                                    <span class="confirm-product">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <span>Product found</span>
+                                    </span>
+                                </span>
+                                <span class="input-field d-flex justify-content-between">
+                                    <label for="name">Name</label>
+                                    <input class="text-center" type="text" name="name" id="clientName" placeholder="e.g John Doe">
+                                </span>
+                                <span class="input-field d-flex justify-content-between">
+                                    <label for="clientMail">Email</label>
+                                    <input class="text-center" type="text" name="email" id="clientMail" placeholder="clientname@example.com">
+                                </span>
+                                <span class="input-field d-flex justify-content-between">
+                                    <label for="clientPhone">Phone</label>
+                                    <input class="text-center" type="text" name="phone" id="clientPhone" placeholder="+254798765432">
+                                </span>
+                                <span class="operation-response mx-auto">
+                                    <label class="success mx-auto d-flex align-items-center">
+                                        <span>Successfully added</span>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                    </label>
+                                    <label class="failure mx-auto d-none align-items-center">
+                                        <span>Failed!</span>
+                                        <i class="bi bi-x-circle-fill"></i>
+                                    </label>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="prodModal" class="modal fade prodModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title myModal-title">New Project</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-form">
+                            <form action="" class="d-flex flex-column justify-content-between">
+                                <span class="input-field d-flex justify-content-between">
+                                    <label for="prodName">Name</label>
+                                    <input class="text-center" type="text" name="prodName" id="prodName" placeholder="e.g The real homes">
+                                </span>
+                                <span class="input-field d-flex justify-content-between">
+                                    <label for="prodValue">Value</label>
+                                    <input class="text-center" type="text" name="prodValue" id="prodValue" placeholder="e.g 19.2M">
+                                </span>
+                                <span class="operation-response mx-auto">
+                                    <label class="success mx-auto d-flex align-items-center">
+                                        <span>Successfully added</span>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                    </label>
+                                    <label class="failure mx-auto d-none align-items-center">
+                                        <span>Failed!</span>
+                                        <i class="bi bi-x-circle-fill"></i>
+                                    </label>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
                 </div>
             </div>
         </section>

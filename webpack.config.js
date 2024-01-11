@@ -24,6 +24,12 @@ module.exports = {
                 filename: "../html/staff.html"
             }
         ),
+        new HtmlWebpackPlugin(
+            {
+                template: "src/html/home-template.html",
+                filename: "../html/home.html"
+            }
+        ),
         new miniCssExtractPlugin(
             {
                 filename: "../css/style.css"

@@ -55,7 +55,7 @@
                             </a>
                             <div class="collapse mini-menu" id="proj-menu">
                                 <a class="d-block collapse-link" data-bs-toggle="modal" data-bs-target="#prodModal">Add project</a>
-                                <a class="d-block collapse-link">Manage</a>
+                                <a class="d-block collapse-link" href="#projectsDetails">View</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -64,16 +64,16 @@
                             </a>
                             <div class="collapse mini-menu" id="clients-menu">
                                 <a class="d-block collapse-link" data-bs-toggle="modal" data-bs-target="#clientModal">Add Client</a>
-                                <a class="d-block collapse-link">Manage</a>
+                                <a class="d-block collapse-link" href="#clientsDetails">View</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center" href="#staff-menu" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="staff-menu">
+                            <a class="nav-link d-flex align-items-center" href="./staff.html">
                                 <i class="bi bi-shield-fill-exclamation btsp-icons me-2"></i> Staff
-                            </a>
+                            </a><!-- 
                             <div class="collapse mini-menu" id="staff-menu">
-                                <a class="d-block collapse-link">Manage</a>
-                            </div>
+                                <a class="d-block collapse-link" href="">View</a>
+                            </div> -->
                         </li>
                         <li class="nav-item div-recents">
                             <a href="#activities-log" class="nav-link d-flex align-items-center" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="activities-log">
@@ -101,7 +101,7 @@
                     </div>
                     <div class="dropdown col-2 d-flex justify-content-end">
                         <div class="d-flex col-7 justify-content-between">
-                            <a class="" role="button">
+                            <a class="" role="button" href="#notificationsOffcanvas" data-bs-toggle="offcanvas" aria-controls="notificationsOffcanvas">
                                 <i class="bi bi-bell-fill btsp-icons"></i>
                             </a>
                             <a id="dropmenuAcc" class="div-staff-prof show" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -121,6 +121,13 @@
                                         <span>Logout</span>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="offcanvas offcanvas-end" id="notificationsOffcanvas" aria-labelledby="offcanvasLabel">
+                                <div class="offcanvas-header">
+                                    <h2 class="offcanvas-title" id="offcanvasLabel">Notifications</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body"></div>
                             </div>
                         </div>
                         
@@ -212,7 +219,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-prop-data col-10 mx-auto">
+        <section id="projectsDetails" class="section-prop-data col-10 mx-auto">
             <div class="data-table-wrapper col-11 mx-auto">
                 <div class="ctable-title col-5">
                     <span>Projects Details</span>
@@ -239,7 +246,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-prop-data col-10 mx-auto">
+        <section id="clientsDetails" class="section-prop-data col-10 mx-auto">
             <div class="data-table-wrapper col-11 mx-auto">
                 <div class="ctable-title col-5 d-flex flex-column align-items-left">
                     <span class="">Clients Details</span>

@@ -329,18 +329,19 @@ main .section-prop-data .data-table-wrapper .paginate_button {
   line-height: 17px;
 }
 main .section-prop-data .data-table-wrapper .staff-plus {
-  background-color: #f8f9fa;
   position: absolute;
   top: 4rem;
   left: 4rem;
-  box-shadow: 1px 1px 4px 0.6px rgba(0, 0, 0, 0.2);
 }
 main .section-prop-data .data-table-wrapper .staff-plus a {
   text-decoration: none;
+  font-weight: 400;
+  box-shadow: 1px 1px 4px 0.6px rgba(0, 0, 0, 0.2);
+  background-color: #f8f9fa;
+  color: #0a58ca;
 }
 main .section-prop-data .data-table-wrapper .staff-plus i {
   font-size: 26;
-  font-weight: 400;
 }
 main .section-prop-data .table-tab {
   background-color: #f8f9fa;

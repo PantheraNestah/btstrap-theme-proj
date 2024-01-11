@@ -1,34 +1,34 @@
 var staffsArray = [
     {
-        "":"",
+        "id": 1,
         "name":"William Tony",
         "department":"HR",
         "phone":"+254798765432",
         "email":"tonywilliam@gmail.com"
     },
     {
-        "":"",
+        "id": 2,
         "name":"Alfred Juma",
         "department":"Sales",
         "phone":"+254798765432",
         "email":"alfredjuma@gmail.com"
     },
     {
-        "":"",
+        "id": 3,
         "name":"Gabriel Wekesa",
         "department":"Support",
         "phone":"+254798765432",
         "email":"gabrielwekesa@gmail.com"
     },
     {
-        "":"",
+        "id": 4,
         "name":"Lyne Wanjiku",
         "department":"Accounts",
         "phone":"+254798765432",
         "email":"lynewanjiku@gmail.com"
     },
     {
-        "":"",
+        "id": 5,
         "name":"Candy Synclare",
         "department":"HR",
         "phone":"+254798765432",
@@ -40,13 +40,6 @@ var table = $('#staff-table').DataTable({
     "data": staffsArray,
     pagingType: "simple",
     pageLength: 5,
-    "columns": [
-        {"data": ""},
-        {"data": "name"},
-        {"data": "department"},
-        {"data": "phone"},
-        {"data": "email"}
-    ],
     'columnDefs': [
        {
             'targets': 0,
@@ -55,6 +48,13 @@ var table = $('#staff-table').DataTable({
             }
        },
     ],
+    "columns": [
+        {"data": "id"},
+        {"data": "name"},
+        {"data": "department"},
+        {"data": "phone"},
+        {"data": "email"}
+    ],
     'select': {
        'style': 'multi',
        "selector": 'td:first-child'
@@ -62,9 +62,14 @@ var table = $('#staff-table').DataTable({
     'order': [[1, 'asc']],
  })
 
- var handleBulkSelect = {
+var actionBtn = document.getElementById("rows-action")
+actionBtn.addEventListener("click", (btn) => {
+    console.log("button clicked!")
+})
+
+ /* var handleBulkSelect = {
     checkboxes: document.querySelectorAll(".dt-checkboxes"),
-    selectedData: table.columns().checkboxes.selected().data().toArray(),
+    selectedData: table.columns(0).checkboxes.selected().data().toArray(),
     listenStateChange: function(){
         this.checkboxes.forEach((checkbox) => {
             checkbox.addEventListener("click", async() => {
@@ -76,5 +81,4 @@ var table = $('#staff-table').DataTable({
             })
         })
     }
- }
- handleBulkSelect.listenStateChange()
+ } */

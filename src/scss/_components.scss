@@ -162,14 +162,15 @@ main {
                 line-height: 17px;
             }
             .staff-plus {
-                background-color: $cust-gray1;
                 position: absolute;
                 top: 4rem;
                 left: 4rem;
-                box-shadow: 1px 1px 4px 0.6px rgba(0,0,0,0.2);
                 a {
                     text-decoration: none;
                     font-weight: 400;
+                    box-shadow: 1px 1px 4px 0.6px rgba(0,0,0,0.2);
+                    background-color: $cust-gray1;
+                    color: $blue-600;
                 }
                 i {
                     font-size: 26;
