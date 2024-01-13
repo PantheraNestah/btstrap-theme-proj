@@ -103,12 +103,15 @@
                     </div>
                     <div class="dropdown col-2 d-flex justify-content-end">
                         <div class="d-flex col-7 justify-content-between">
+                            <a href="" class="me-2 f-6">
+                                <span><i class="bi bi-box-arrow-right btsp-icons f-5"></i></span>
+                            </a>
                             <a class="" role="button" href="#notificationsOffcanvas" data-bs-toggle="offcanvas" aria-controls="notificationsOffcanvas">
                                 <i class="bi bi-bell-fill btsp-icons"></i>
                             </a>
-                            <a id="dropmenuAcc" class="div-staff-prof show" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="div-staff-prof" href="#settingsOffcanvas" data-bs-toggle="offcanvas" aria-controls="settingsOffcanvas">
                                 <img src="../imgs/AI-Profile-Picture.jpg" alt="AI generated image" style="width: 30px;height: 30px;border-radius: 50%;">
-                            </a>
+                            </a><!-- 
                             <div id="staff-accessories" class="dropdown-menu dropdown-menu-end staff-accessories" aria-labelled-by="dropmenuAcc" data-bs-popper="static">
                                 <span class="header-wrapper d-flex align-items-center justify-content-center">
                                     <h2 class="text-center">Profile & account</h2>
@@ -123,13 +126,48 @@
                                         <span>Logout</span>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <div class="offcanvas offcanvas-end" id="notificationsOffcanvas" aria-labelledby="offcanvasLabel">
                                 <div class="offcanvas-header">
                                     <h2 class="offcanvas-title" id="offcanvasLabel">Notifications</h2>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body"></div>
+                            </div>
+                            <div class="offcanvas offcanvas-end" id="settingsOffcanvas" aria-labelledby="settingsLabel">
+                                <div class="offcanvas-header">
+                                    <h2 class="offcanvas-title" id="settingsLabel" style="font-size: 22px;">Account Settings</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <hr>
+                                <div class="offcanvas-body">
+                                    <article>
+                                        <div class="div-current-profile d-flex align-items-center justify-content-center">
+                                            <img src="../imgs/AI-Profile-Picture.jpg" alt="">
+                                        </div>
+                                    </article>
+                                    <article class="article-staff-details">
+                                        <div class="staff-details">
+                                            <form action="" class="d-flex flex-column justify-content-between col-11">
+                                                <span class="d-flex justify-content-between">
+                                                    <label for="">Email</label>
+                                                    <input class="txt-input" type="email" placeholder="name@example.com">
+                                                </span>
+                                                <span class="d-flex justify-content-between">
+                                                    <label for="">Phone</label>
+                                                    <input class="txt-input" type="text" placeholder="+254798765432">
+                                                </span>
+                                                <span class="d-flex justify-content-between">
+                                                    <label for="">Profile</label>
+                                                    <input type="file" class="ms-3">
+                                                </span>
+                                                <div>
+                                                    <input type="submit" value="Save" class="btn btn-cprimary" style="width: 60px;">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </article>
+                                </div>
                             </div>
                         </div>
                     </div>
