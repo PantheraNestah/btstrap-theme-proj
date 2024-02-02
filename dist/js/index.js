@@ -1,6 +1,4 @@
 
-/* import echarts from 'echarts' */
-
 var projNamesArray = [
     "Other Projects' clients",
     "Urban Oasis Realty", 
