@@ -547,9 +547,18 @@ main .current-staff .prof-body .info-container a.btn {
 .div-quick-acc .offcanvas .div-profile-upload form {
   height: 12rem;
 }
-.div-quick-acc .offcanvas .div-profile-upload .input-image {
+.div-quick-acc .offcanvas .div-profile-upload .upload-wrapper {
   background-color: #f8f9fa;
   height: 7rem;
+}
+.div-quick-acc .offcanvas .div-profile-upload .file-input {
+  height: 7rem;
+}
+.div-quick-acc .offcanvas .div-profile-upload .file-preview, .div-quick-acc .offcanvas .div-profile-upload .file-drop-zone, .div-quick-acc .offcanvas .div-profile-upload .file-preview-thumbnails, .div-quick-acc .offcanvas .div-profile-upload .kv-upload-progress {
+  height: 6px;
+}
+.div-quick-acc .offcanvas .div-profile-upload .file-input-title {
+  font-size: 16px;
 }
 
 .div-staff-prof {

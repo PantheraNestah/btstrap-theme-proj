@@ -381,9 +381,18 @@ main {
             form {
                 height: 12rem;
             }
-            .input-image {
+            .upload-wrapper {
                 background-color: $cust-gray1;
                 height: 7rem;
+            }
+            .file-input {
+                height: 7rem;
+            }
+            .file-preview, .file-drop-zone, .file-preview-thumbnails, .kv-upload-progress {
+                height: 6px;
+            }
+            .file-input-title {
+                font-size: 16px;
             }
         }
     }

@@ -2,7 +2,7 @@ const apiEndPoint = "http://localhost:8080/api/"
 
 var projDtos = []
 
-var fetchAllProjs = async() => {
+/* var fetchAllProjs = async() => {
     var projPromise = await fetch(
         `${apiEndPoint}projects/all`,
         {
@@ -12,6 +12,30 @@ var fetchAllProjs = async() => {
     const respBody = await projPromise.json()
     return (respBody)
 }
+fetchAllProjs().then(
+    (response) => {
+        projDtos = response.data.projects
+        projectsArea.populateObjects()
+        console.log(projectsArea.projObjects)
+        projectsDataTable.clear().rows.add(projectsArea.projObjects).draw()
+    }
+) */
+
+$("#img-upload").fileinput({
+    showUpload: false,
+    previewFileType: 'any',
+    showCancel: false,
+    showPause: false,
+    showCaption: false,
+    browseOnZoneClick: true,
+    showBrowse: false,
+    showRemove: false,
+    maxFilePreviewSize: 2000,
+    zoomModalHeight: 120,
+    allowedFileTypes: ['image'],
+    allowedFileExtensions: ['jpg', 'png']
+});
+
 var projectsDataTable = $("#projTable").DataTable(
     {
         select: {
@@ -28,14 +52,6 @@ var projectsDataTable = $("#projTable").DataTable(
             {data: "value"},
             {data: "clients"}
         ]
-    }
-)
-fetchAllProjs().then(
-    (response) => {
-        projDtos = response.data.projects
-        projectsArea.populateObjects()
-        console.log(projectsArea.projObjects)
-        projectsDataTable.clear().rows.add(projectsArea.projObjects).draw()
     }
 )
 
@@ -92,8 +108,6 @@ var projectsArea = {
         })
     }
 }
-
-
 var projNamesArray = [
     "Other Projects' clients",
     "Urban Oasis Realty", 
@@ -333,7 +347,6 @@ var clientGraphOption = {
     animation: true,
     animationEasing: "quadraticInOut",
 }
-
 var propGraphOption = {
 	title: {
         show: true,
