@@ -441,11 +441,25 @@ main .current-staff .prof-body .info-container a.btn {
 }
 .nav-div-drop .div-recents a {
   text-decoration: none;
-  color: #495057;
+  color: #495057; /* #495057 */
 }
 .nav-div-drop .div-recents div {
   height: 15rem;
-  background-color: #dee2e6;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 20px;
+  background-color: #dee2e6; /* #dee2e6; */
+  overflow-y: scroll;
+}
+.nav-div-drop .div-recents div .default, .nav-div-drop .div-recents div .notification {
+  border-bottom: 1px solid #f8f9fa; /* f8f9fa */
+}
+.nav-div-drop .div-recents div .default p, .nav-div-drop .div-recents div .notification p {
+  font-size: 12px;
+}
+.nav-div-drop .div-recents div .default time, .nav-div-drop .div-recents div .notification time {
+  font-size: 10.8px;
+  color: #479f76; /* #13795b */
 }
 .nav-div-drop .support div {
   height: 15rem;
@@ -505,13 +519,13 @@ main .current-staff .prof-body .info-container a.btn {
 .div-quick-acc .offcanvas .article-staff-details {
   background-color: #ffe5d0;
   margin-top: 1rem;
-  height: 22rem;
+  height: 32rem;
   position: relative;
 }
 .div-quick-acc .offcanvas .staff-details {
   padding-top: 3rem;
   padding-left: 2rem;
-  height: 18rem;
+  height: 17rem;
 }
 .div-quick-acc .offcanvas .staff-details form {
   height: 12rem;
@@ -525,6 +539,17 @@ main .current-staff .prof-body .info-container a.btn {
 .div-quick-acc .offcanvas .staff-details .txt-input {
   width: 170px;
   text-align: center;
+}
+.div-quick-acc .offcanvas .div-profile-upload {
+  height: 13rem;
+  padding-left: 2rem;
+}
+.div-quick-acc .offcanvas .div-profile-upload form {
+  height: 12rem;
+}
+.div-quick-acc .offcanvas .div-profile-upload .input-image {
+  background-color: #f8f9fa;
+  height: 7rem;
 }
 
 .div-staff-prof {
@@ -564,10 +589,10 @@ main .current-staff .prof-body .info-container a.btn {
   font-size: 20px;
 }
 
-.clientModal .modal-content, .prodModal .modal-content, .messageModal .modal-content {
+.clientModal .modal-content, .prodModal .modal-content, .staffModal .modal-content, .messageModal .modal-content {
   background-color: #ffe5d0;
 }
-.clientModal .myModal-title, .prodModal .myModal-title, .messageModal .myModal-title {
+.clientModal .myModal-title, .prodModal .myModal-title, .staffModal .myModal-title, .messageModal .myModal-title {
   font-size: 20px;
 }
 
@@ -623,10 +648,10 @@ main .current-staff .prof-body .info-container a.btn {
   margin-right: 10px;
 }
 
-.clientModal .modal-form {
+.clientModal .modal-form, .staffModal .modal-form {
   height: 340px;
 }
-.clientModal .modal-form form {
+.clientModal .modal-form form, .staffModal .modal-form form {
   height: 250px;
 }
 
