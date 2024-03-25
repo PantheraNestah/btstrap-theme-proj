@@ -405,6 +405,9 @@ main .current-staff .prof-body .info-container .quick-contact {
   padding-left: 0.6rem;
   padding-right: 0.6rem;
 }
+main .current-staff .prof-body .info-container .quick-contact .btn-cprimary {
+  color: #ffe5d0;
+}
 main .current-staff .prof-body .info-container a.btn {
   font-size: 13px;
 }
@@ -551,14 +554,13 @@ main .current-staff .prof-body .info-container a.btn {
   background-color: #f8f9fa;
   height: 7rem;
 }
-.div-quick-acc .offcanvas .div-profile-upload .file-input {
-  height: 7rem;
+.div-quick-acc .offcanvas .div-profile-upload .upload-wrapper #img-upload {
+  width: 200px;
+  font-size: 14px;
+  color: #75b798;
 }
-.div-quick-acc .offcanvas .div-profile-upload .file-preview, .div-quick-acc .offcanvas .div-profile-upload .file-drop-zone, .div-quick-acc .offcanvas .div-profile-upload .file-preview-thumbnails, .div-quick-acc .offcanvas .div-profile-upload .kv-upload-progress {
-  height: 6px;
-}
-.div-quick-acc .offcanvas .div-profile-upload .file-input-title {
-  font-size: 16px;
+.div-quick-acc .offcanvas .submit-btn {
+  color: #ffe5d0;
 }
 
 .div-staff-prof {

@@ -21,21 +21,6 @@ fetchAllProjs().then(
     }
 ) */
 
-$("#img-upload").fileinput({
-    showUpload: false,
-    previewFileType: 'any',
-    showCancel: false,
-    showPause: false,
-    showCaption: false,
-    browseOnZoneClick: true,
-    showBrowse: false,
-    showRemove: false,
-    maxFilePreviewSize: 2000,
-    zoomModalHeight: 120,
-    allowedFileTypes: ['image'],
-    allowedFileExtensions: ['jpg', 'png']
-});
-
 var projectsDataTable = $("#projTable").DataTable(
     {
         select: {
