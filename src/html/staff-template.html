@@ -28,7 +28,7 @@
                             <a><i class="bi bi-bell-fill btsp-icons"></i></a>
                         </span>
                         <a id="dropmenuAcc" class="div-staff-prof show" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="../imgs/AI-Profile-Picture.jpg" alt="AI generated image" style="width: 30px;height: 30px;border-radius: 50%;">
+                            <img src="../imgs/AI-Profile-Picture.jpg" alt="DP" class="staff-prof-photo" style="width: 30px;height: 30px;border-radius: 50%;">
                         </a>
                         <div id="staff-accessories" class="dropdown-menu dropdown-menu-end staff-accessories" aria-labelled-by="dropmenuAcc" data-bs-popper="static">
                             <span class="header-wrapper d-flex align-items-center justify-content-center">
@@ -124,7 +124,7 @@
                                 <i class="bi bi-bell-fill btsp-icons"></i>
                             </a>
                             <a class="div-staff-prof" href="#settingsOffcanvas" data-bs-toggle="offcanvas" aria-controls="settingsOffcanvas">
-                                <img src="../imgs/AI-Profile-Picture.jpg" alt="AI generated image" style="width: 30px;height: 30px;border-radius: 50%;">
+                                <img src="../imgs/AI-Profile-Picture.jpg" alt="DP" class="staff-prof-photo" style="width: 30px;height: 30px;border-radius: 50%;">
                             </a>
                             <!-- 
                             <div id="staff-accessories" class="dropdown-menu dropdown-menu-end staff-accessories" aria-labelled-by="dropmenuAcc" data-bs-popper="static">
@@ -158,41 +158,41 @@
                                 <div class="offcanvas-body">
                                     <article>
                                         <div class="div-current-profile d-flex align-items-center justify-content-center">
-                                            <img src="../imgs/AI-Profile-Picture.jpg" alt="">
+                                            <img src="../imgs/AI-Profile-Picture.jpg" alt="" class="staff-prof-photo">
                                         </div>
                                     </article>
                                     <article class="article-staff-details">
-                                        <span style="position: absolute; top: 0.8rem;right: 1.1rem;cursor: pointer;">
+                                        <span id="toggle-edit" style="position: absolute; top: 0.8rem;right: 1.1rem;cursor: pointer;">
                                             <i class="bi bi-pencil-square" style="font-size: 24px;font-weight: 800;"></i>
                                         </span>
                                         <div class="staff-details">
-                                            <form action="" class="d-flex flex-column justify-content-between col-11">
+                                            <form id="edit-staffForm" action="" class="d-flex flex-column justify-content-between col-11">
                                                 <span class="d-flex justify-content-between">
-                                                    <label for="">Email</label>
-                                                    <input class="txt-input" type="email" placeholder="name@example.com">
+                                                    <label for="staffEmail">Email</label>
+                                                    <input id="staffEmail" class="txt-input" type="email" name="email" placeholder="name@example.com" disabled>
                                                 </span>
                                                 <span class="d-flex justify-content-between">
-                                                    <label for="">Phone</label>
-                                                    <input class="txt-input" type="text" placeholder="+254798765432">
+                                                    <label for="staffPhone">Phone</label>
+                                                    <input class="txt-input" type="text" name="phone" id="staffPhone"  placeholder="+254798765432" disabled>
                                                 </span>
                                                 <span class="d-flex justify-content-between">
                                                     <label for="lnHandle">LinkedIn</label>
-                                                    <input class="txt-input" type="text" name="lnHandle" id="lnHandle" placeholder="@LinkedIn">
+                                                    <input class="txt-input" type="text" name="lnHandle" id="lnHandle" placeholder="@LinkedIn" disabled>
                                                 </span>
                                                 <span class="d-flex justify-content-between">
                                                     <label for="xHandle">X Handle</label>
-                                                    <input class="txt-input" type="text" name="xHandle" id="xHandle" placeholder="@xHandle">
+                                                    <input class="txt-input" type="text" name="xhandle" id="xHandle" placeholder="@xHandle" disabled>
                                                 </span>
                                                 <div>
-                                                    <input type="submit" value="Save" class="submit-btn btn btn-cprimary" style="width: 60px;">
+                                                    <input type="submit" value="Save" class="submit-edit submit-btn btn btn-cprimary" style="width: 60px;" disabled>
                                                 </div>
                                             </form>
                                         </div>
                                         <div class="div-profile-upload d-flex flex-column justify-content-between col-11">
-                                            <form class="col-12 d-flex flex-column justify-content-between">
+                                            <form id="prof-img-upload-form" class="col-12 d-flex flex-column justify-content-between">
                                                 <label for="img-upload">Profile photo</label>
                                                 <div class="upload-wrapper col-11 d-flex align-items-center justify-content-center">
-                                                    <input id="img-upload" type="file">
+                                                    <input id="img-upload" name="photo" type="file">
                                                 </div>
                                                 <div class="profile-submit">
                                                     <input type="submit" value="Update" class="submit-btn btn btn-cprimary" style="width: 75px;">
@@ -222,7 +222,7 @@
                 <div class="prof-header">
                 </div>
                 <div class="profile-img d-flex align-items-center justify-content-center">
-                    <img src="../imgs/AI-Profile-Picture.jpg" alt="My profile picture">
+                    <img src="../imgs/AI-Profile-Picture.jpg" alt="DP"  class="staff-prof-photo">
                 </div>
                 <div class="prof-body">
                     <div class="row info-container">
@@ -243,19 +243,19 @@
                             <article>
                                 <a href="" class="d-flex align-items-center"> <!--linkedin handle-->
                                     <span><i class="bi bi-linkedin"></i></span>
-                                    <span class="ms-2">McDornald Williams</span>
+                                    <span class="detail-ln ms-2">McDornald Williams</span>
                                 </a>
                             </article>
                             <article>
                                 <a href="" class="d-flex align-items-center"> <!--twitter handle-->
                                     <span style="color: black;"><i class="bi bi-twitter-x"></i></i></span>
-                                    <span class="ms-2">@McDornald254</span>
+                                    <span class="detail-x ms-2">@McDornald254</span>
                                 </a>
                             </article>
                             <article>
                                 <a href="" class="d-flex align-items-center"> <!--gmail handle-->
                                     <span><i class="bi bi-envelope-at-fill"></i></span>
-                                    <span class="ms-2">dornaldwilliams@gmail.com</span>
+                                    <span class="detail-mail ms-2">dornaldwilliams@gmail.com</span>
                                 </a>
                             </article>
                         </div>
