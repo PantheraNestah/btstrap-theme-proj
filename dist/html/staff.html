@@ -355,7 +355,7 @@
                                 <span class="input-field d-flex justify-content-between">
                                     <label for="productId">Product Id</label>
                                     <input class="text-center" type="text" id="productId" placeholder="search by id">
-                                    <span class="confirm-product">
+                                    <span class="confirm-product d-none">
                                         <i class="bi bi-check-circle-fill"></i>
                                         <span>Product found</span>
                                     </span>
@@ -377,7 +377,7 @@
                                         <span>Successfully added</span>
                                         <i class="bi bi-check-circle-fill"></i>
                                     </label>
-                                    <label class="failure mx-auto d-flex align-items-center">
+                                    <label class="failure mx-auto d-none align-items-center">
                                         <span>Operation Failed!</span>
                                         <i class="bi bi-x-circle-fill"></i>
                                     </label>
@@ -401,7 +401,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="modal-form">
-                            <form action="" class="d-flex flex-column justify-content-between">
+                            <form action="" id="prodForm" class="d-flex flex-column justify-content-between">
                                 <span class="input-field d-flex justify-content-between">
                                     <label for="prodName">Name</label>
                                     <input class="text-center" type="text" name="prodName" id="prodName" placeholder="e.g The real homes">
@@ -410,22 +410,26 @@
                                     <label for="prodValue">Value</label>
                                     <input class="text-center" type="text" name="prodValue" id="prodValue" placeholder="e.g 19.2M">
                                 </span>
+                                <span class="input-field d-flex justify-content-between">
+                                    <label for="">Photo</label>
+                                    <input type="file" class="ms-2">
+                                </span>
                                 <span class="operation-response mx-auto">
-                                    <label class="success mx-auto d-flex align-items-center">
+                                    <label class="success mx-auto d-none align-items-center">
                                         <span>Successfully added</span>
                                         <i class="bi bi-check-circle-fill"></i>
                                     </label>
                                     <label class="failure mx-auto d-none align-items-center">
-                                        <span>Failed!</span>
+                                        <span>Operation Failed!</span>
                                         <i class="bi bi-x-circle-fill"></i>
                                     </label>
                                 </span>
+                                <span class="modal-footer">
+                                    <input type="submit" value="Save" class="btn btn-primary" style="width: 60px;height: 38px;">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="width: 60px;height: 38px;">Close</button>
+                                </span>
                             </form>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save</button>
                     </div>
                 </div>
             </div>
