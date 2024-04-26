@@ -320,7 +320,7 @@
                                 </span>
                                 <span class="input-field d-flex justify-content-between">
                                     <label for="staffDept">Department</label>
-                                    <input class="text-center" type="text" name="staffDept" id="staffDept" placeholder="e.g I.T/Accounts">
+                                    <input class="text-center" type="text" name="department" id="staffDept" placeholder="e.g I.T/Accounts">
                                 </span>
                                 <span class="operation-response mx-auto">
                                     <label class="success mx-auto d-none align-items-center">
@@ -351,10 +351,10 @@
                     </div>
                     <div class="modal-body">
                         <div class="modal-form">
-                            <form action="" class="d-flex flex-column justify-content-between col-11">
+                            <form action="" id="clientForm" class="d-flex flex-column justify-content-between col-11">
                                 <span class="input-field d-flex justify-content-between">
                                     <label for="productId">Product Id</label>
-                                    <input class="text-center" type="text" id="productId" placeholder="search by id">
+                                    <input class="text-center" type="text" name="prodId" id="productId" placeholder="search by id">
                                     <span class="confirm-product d-none">
                                         <i class="bi bi-check-circle-fill"></i>
                                         <span>Product found</span>
@@ -411,8 +411,8 @@
                                     <input class="text-center" type="text" name="prodValue" id="prodValue" placeholder="e.g 19.2M">
                                 </span>
                                 <span class="input-field d-flex justify-content-between">
-                                    <label for="">Photo</label>
-                                    <input type="file" class="ms-2">
+                                    <label for="prodPhoto">Photo</label>
+                                    <input type="file" class="ms-2" id="prodPhoto">
                                 </span>
                                 <span class="operation-response mx-auto">
                                     <label class="success mx-auto d-none align-items-center">
@@ -443,6 +443,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/v/dt/dt-1.10.16/sl-1.2.5/datatables.min.js"></script>
     <script src="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.12/js/dataTables.checkboxes.min.js"></script>
+    <script src="../js/main.js"></script>
     <script src="../js/staff.js"></script>
 </body>
 </html>
